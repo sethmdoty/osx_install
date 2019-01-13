@@ -1,0 +1,15 @@
+---
+- name: download firacode file
+  get_url: url={{ firacode_download_url }} dest={{ firacode_download_dir }}/{{ firacode_zip_filename }} mode=0440
+  tags:
+   - download_only
+   - font_install
+
+- unarchive: src={{ firacode_download_dir }}/{{ firacode_zip_filename }} dest=/tmp copy=no
+  tags:
+    - font_install
+
+- copy: src=/tmp/ttf/{{ item }} dest={{ firacode_install_dir }}/{{ item }}
+  with_items: "{{ firacode_font_filenames }}"
+  tags:
+    - font_install

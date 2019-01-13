@@ -1,5 +1,6 @@
 ---
 # defaults file for osx_zsh
+# only used for the requirements file.  Use vars/main.yml for font or zsh installs
 ---
 homebrew_repo: https://github.com/Homebrew/brew
 

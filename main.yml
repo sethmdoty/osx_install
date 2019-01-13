@@ -11,3 +11,7 @@
 
   tasks:
     - include_tasks: tasks/zsh.yml
+    - include_tasks: tasks/firacode.yml
+      tags:
+       - download_only
+       - font_install
