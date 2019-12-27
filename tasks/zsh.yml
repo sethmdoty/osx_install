@@ -32,8 +32,3 @@
   copy: src=files/zshrc
         dest=/home/{{ username }}/.zshrc
         force=yes
-
-- name: change user shell to zsh
-  become: yes
-  become_user: root
-  command: chsh -s /bin/zsh "{{ username }}"

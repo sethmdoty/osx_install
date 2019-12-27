@@ -1,17 +1,7 @@
 ---
-# vars file for osx_zsh
-username: sethdoty
 
-firacode_download_url: https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip
-firacode_zip_filename: FiraCode.zip
-firacode_font_filenames:
-  - FiraCode-Retina.ttf
-  - FiraCode-Bold.ttf
-  - FiraCode-Light.ttf
-  - FiraCode-Medium.ttf
-firacode_download_dir: ~/Downloads
-firacode_install_dir: ~/Library/Fonts
 homebrew_installed_packages:
+  # - ansible # Installed via Pip.
   - aspell
   - autoconf
   - black
